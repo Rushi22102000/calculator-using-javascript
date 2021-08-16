@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+	#er{width: 194px;height: 160px;background-color: whitesmoke;padding: 5px 1px 1px 4px;font-size: 15px;}
+	#er1{color: green;padding-left: 10px;padding-right: 5px;border:2px solid black;width:170px;}
+	#er2{border:1px solid grey;width:184px;height: 120px;margin-top: 5px;}
+	#er3{border: 1px solid black;height:18px;width:154px;margin: 1px;margin-top: 2px;;}
+	#er4{border: 2px solid black;height:10px;margin: 1px;width:144px}
+	#er44{display: flex;}
+	.er6{border: 1px solid black;height:18px;width:47px;margin: 2px;}
+	.er7{border: 2px solid black;height:16px;margin: 1px;width:45px;background-color: green;text-align: center;font-size: 11px;font-family: sans-serif;}
+	.er61{border: 1px solid black;height:18px;width:20px;margin: 2px 2px 1px 1px;}
+	.er71{border: 2px solid black;height:16px;margin: 1px;width:18px;background-color: green;text-align: center;font-size: 11px;font-family: sans-serif;}
+	.er8{display: flex;}
+	.er7, .er71{cursor: pointer;}
+	.er7:active, .er71:active{font-size: 13px;}
+	.er7:focus, .er71:focus{outline: 0;}
+	
+</style>
+<script>
+
+
+</script>
+</head>
+<body>
+	<div id="er">
+	<div id="er1">GeeksforGeeks Calculator</div>
+	<div id="er2">
+		<div id="er44">
+		<div id="er3">
+			<input  type="text" id="er4">
+	</div>
+
+	<div class="er61">
+		<button class="er71" onclick="myFunction2('c')">C</button>
+	</div>
+	</div>
+		<div class="er8">
+		<div class="er6">
+	    <button class="er7"  onclick="myFunction('1')">1</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('2')">2</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('3')">3</button>
+		</div>
+
+		<div class="er61">
+			<button class="er71"  onclick="myFunction('/')">/</button>
+		</div>
+	
+	</div>
+
+	<div class="er8">
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('4')">4</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('5')">5</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('6')">6</button>
+		</div>
+
+		<div class="er61">
+			<button class="er71"  onclick="myFunction('-')">-</button>
+		</div>
+	
+	</div>
+
+	<div class="er8">
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('7')">7</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('8')">8</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('9')">9</button>
+		</div>
+
+		<div class="er61">
+			<button class="er71"  onclick="myFunction('+')">+</button>
+		</div>
+	
+	</div>
+
+	<div class="er8">
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('.')">.</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction('0')">0</button>
+		</div>
+		<div class="er6">
+			<button class="er7"  onclick="myFunction1('=')">=</button>
+		</div>
+
+		<div class="er61">
+			<button class="er71"  onclick="myFunction('*')">*</button>
+		</div>
+	
+	</div>
+
+</div>
+</div>
+<script>
+function myFunction(val) {
+  document.getElementById("er4").value+=val;
+}
+
+function myFunction1(val) {
+  let x=document.getElementById("er4").value;
+  let y=eval(x)
+  document.getElementById("er4").value=y;
+}
+
+function myFunction2(val) {
+  let x=document.getElementById("er4").value="";
+}
+</script>
+
+</body>
+</html>
